@@ -1,54 +1,119 @@
 <!DOCTYPE html>
-<html lang=en>
-<style type="text/css">
-body {
-      height: 100vh;
-      background: repeating-linear-gradient(
-        45deg,
-        #e6e678 0px,
-        #e6e678 40px,
-        #e6cc82 40px,
-        #e6cc82 80px,
-        #dfa893 80px,
-        #dfa893 120px,
-        #e188c0 120px,
-        #e188c0 160px,
-        #c97bcf 160px,
-        #c97bcf 200px,
-        #896ddc 200px,
-        #896ddc 240px,
-        #5463e4 240px,
-        #5463e4 280px,
-        #896ddc 280px,
-        #896ddc 320px,
-        #c97bcf 320px,
-        #c97bcf 360px,
-        #e188c0 360px,
-        #e188c0 400px,
-        #dfa893 400px,
-        #dfa893 440px,
-        #e6cc82 440px,
-        #e6cc82 480px
-      );
-    }
-    #yes {
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>WIP Page</title>
 
-      color: black;
-      text-align: center;
-      font-family: Arial;
-      font-weight: bold;
-      font-size: 72pt;
-      margin-bottom: 80px;
-    }
-    mark {
-      background-color: white;
-      color: #5463e4;
-    }
+<style>
+  :root {
+    /* stripe thickness relative to screen height */
+    --stripe: 6vh;   /* adjust this to make stripes thicker/thinner */
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+
+    background: repeating-linear-gradient(
+      45deg,
+      #e6e678 0,
+      #e6e678 calc(var(--stripe) * 1),
+      #e6cc82 calc(var(--stripe) * 1),
+      #e6cc82 calc(var(--stripe) * 2),
+      #dfa893 calc(var(--stripe) * 2),
+      #dfa893 calc(var(--stripe) * 3),
+      #e188c0 calc(var(--stripe) * 3),
+      #e188c0 calc(var(--stripe) * 4),
+      #c97bcf calc(var(--stripe) * 4),
+      #c97bcf calc(var(--stripe) * 5),
+      #896ddc calc(var(--stripe) * 5),
+      #896ddc calc(var(--stripe) * 6),
+      #5463e4 calc(var(--stripe) * 6),
+      #5463e4 calc(var(--stripe) * 7),
+      #896ddc calc(var(--stripe) * 7),
+      #896ddc calc(var(--stripe) * 8),
+      #c97bcf calc(var(--stripe) * 8),
+      #c97bcf calc(var(--stripe) * 9),
+      #e188c0 calc(var(--stripe) * 9),
+      #e188c0 calc(var(--stripe) * 10),
+      #dfa893 calc(var(--stripe) * 10),
+      #dfa893 calc(var(--stripe) * 11),
+      #e6cc82 calc(var(--stripe) * 11),
+      #e6cc82 calc(var(--stripe) * 12)
+    );
+  }
+
+  #working {
+    color: black;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15vh;
+    margin: 0;
+    padding-top: 20vh;
+  }
+
+  mark {
+    background: white;
+    color: #5463e4;
+  }
 </style>
-
+</head>
+  <!--
+ _._     _,-'""`-._
+(,-.`._,'(       |\`-/|
+    `-.-' \ )-`( , o o)
+          `-    \`_`"'-
+  -->
 <body>
-    <div>
-        <p id="yes">working.</p>
-    </div>
+  <p id="working">working.</p>
 </body>
 </html>
+<!--
+                                                     ....     ...XWN                              
+                                                     cWOXM kWWOOOc,                               
+                                                     lN 'lNkll .l.            0WW                 
+                                                     lXo' .  oOKW.  MN0W'  xX0l:                  
+                                                  :MM0c   cccllooNl Ml cKMMd, Kk                  
+                                              'lXXx''.  'c;;:NxkO.  x:  .'' ,Oc;;                 
+                                             M0l    ,, NNWkxo.c:    M0o    cdxx0M                 
+                                           dWc.   .o :Nccc   oMd  cNc.    oooooc                  
+                                           ;:      .Ol.      ..cKKl.  .              l00.         
+                                             lc;                    l;            cMMkkM.         
+                                             OKx                  ck        ,OO0XXo';,.           
+                                           oNd'                  lKN     .KXKxx: ::;              
+                                 OMM;    .Mx:          ddd       lKMMc NMX::'    :kM              
+                                  .:xXM. .:. dO000kdddo...     .d0l.:dk'..   ..                   
+                                  'M;'lX;  :llllll,                 l'     ::                     
+                                     '..lKKXXXKx.                         xKKXKXX                 
+                                       :.    dddd:::                        'ddddNMM              
+                                        :l ;d    ;;;                             ;;;WMMM          
+                                           ;: '.                  .'''      .''''   ....xOOOOOMo  
+                                             Xk:  .c             ;;              cccc.      .c    
+ooooooooooool                            .WN0'  ..'c   ...    .:ONWWWWWWMK        :NK,    .       
+MOoooooooooooMMMMMMMMO                   .M:  ,c        cM    MKooooooooKK       WOo    ::        
+ ;;          ,,,,,,,,lNNNNNNNNNN,'''''''x0,. l.  WWNNNNNNW    ,.       :.  ''''cN;.   .l          
+    ,'                ..........kOOOOOOOo:'xXNKNW ,:......        .'''   .WOOOOl.   '.            
+     .ll;                               'llllllllWWMolll'        :;    NWNl         N;            
+         ............                            ''',''':dddddoooKK0KKX,'. ...    ,k              
+                     .::::::::::                                  ,dd,    :NWW.   cMWMMMMMMMMMMMMM
+                             cc:xxxxxkOc:::,                             .NNx'   x0N,''''''''';;;o
+                           dNxxx.   ,,  oWWNXooooooooc;;;;;loooooX:  ,;        ,Nccc;;;;;.  .;    
+                          Xx:     .o,   oNccc       l:    W;     Xl    o. o   cc        Kx cc     
+                       kX0cxx    od      ..       'dKNN   W;   ,0.                                
+                     'Nk, N0l    OO        ;;       odxNc W,   :M.                                
+                    x0X.  ,...   OO          .....     ;dXM,   :M.                                
+                    00     dWW: ;.                ';;.    W,   :MWMN                              
+                    0O c'  xMMc W'                   :dd, W,   :Ml:cMl                            
+                       Ol O,                              W,  .oM,  .l00NK                        
+                        ;:W;                              W,  Md  ;::.  ;xN.                      
+                                                          W,  Md         .cNd                     
+                                                          W,  Md                                  
+                                                          W,  Md                                  
+                                                          W,  Md                                  
+                                                          W,  Md                                  
+                                                          W, x                                    
+                                                          W,.W                                    
+                                                          W,.W                                    
+                                                          Wl;                                     
+                                                          WMX -->
