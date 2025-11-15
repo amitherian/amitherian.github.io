@@ -2,8 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>WIP Page</title>
-
+<title>yeah</title>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.3.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $('#screen').delay(3000).fadeOut(1200);
+    });
+  </script>
 <style>
   :root {
     /* stripe thickness relative to screen height */
@@ -12,10 +19,11 @@
 
   body {
     margin: 0;
+    padding: 0;
     height: 100vh;
 
     background: repeating-linear-gradient(
-      45deg,
+      46.7deg,
       #e6e678 0,
       #e6e678 calc(var(--stripe) * 1),
       #e6cc82 calc(var(--stripe) * 1),
@@ -44,18 +52,51 @@
   }
 
   #working {
-    color: black;
+    color: white;
     text-align: center;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    font-size: 15vh;
+    font-size: 7.5vw;
     margin: 0;
-    padding-top: 20vh;
+    padding-top: 10vh;
+  }
+  #workingindex {
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 7.5vw;
+    margin: 0;
+    padding-top: 15vh;
+    z-index:20;
+  }
+  #more {
+    color: #e6cc82;
+    text-align: center;
+    display: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: max(1.35vw, 8pt);
+    line-height: 1.66;
+  }
+  #maindiv {
+    background-color: #19347dd8; 
+    margin-left: 20vw; 
+    margin-right: 20vw; 
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+    height: max(100vh, 1000px);
   }
 
-  mark {
-    background: white;
-    color: #5463e4;
+  #screen {
+    top: 0;
+    background-color:black; 
+    color: white;
+    margin-top:0px; 
+    z-index:10; 
+    position:absolute; 
+    height:1000vh; 
+    width:100vw
   }
 </style>
 </head>
@@ -66,7 +107,14 @@
           `-    \`_`"'-
   -->
 <body>
-  <p id="working">working.</p>
+  <div id="screen">
+    <p id="workingindex">working.</p>
+  </div>
+
+  <div id="maindiv">
+  <p id="working">working.</p> <!--
+  <br><br>
+  <p id="more"> there are many forms of non-humanity. </p> --></div>
 </body>
 </html>
 <!--
